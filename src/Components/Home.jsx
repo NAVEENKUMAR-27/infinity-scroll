@@ -86,9 +86,7 @@ const Home = () => {
         setSearchItem(event.target.value);
     };
     const filteredImages = img.filter(image => image.user.toLowerCase().includes(searchItem.toLowerCase()));
-
-
-
+    
     return (
         <>
 
