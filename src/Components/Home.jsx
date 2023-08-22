@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import { Autocomplete, Avatar, Box, Card, CardHeader, CardMedia, Fab, Paper, Stack, TextField, Typography } from "@mui/material";
 import UpIcon from '@mui/icons-material/KeyboardArrowUp';
 import "./style.css"
-import { ThreeDots } from 'react-loader-spinner';
+import { Audio, ThreeDots } from 'react-loader-spinner';
 
 
 
@@ -155,7 +155,7 @@ const Home = () => {
 
 
                 <div >
-                    <ThreeDots
+                    <Audio
                         height="80"
                         width="100"
                         radius="9"
