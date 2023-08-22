@@ -37,7 +37,7 @@ const Home = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             fetchData();
-        }, 100); return () => clearTimeout(timer);
+        }, 50); return () => clearTimeout(timer);
     }, [page])
 
     /*infinity Scroll Function*/
@@ -122,10 +122,7 @@ const Home = () => {
                                 </form>
                             </div>
                         </nav>
-
                     </div>
-
-
                 </div>
 
                 <div className="row justify-content-around">
@@ -154,9 +151,9 @@ const Home = () => {
                     ))}
                 </div>
 
-                <Fab size="large" aria-label='Expand' color='inherit' style={{ ...fabStyle, display: visible ? 'inline' : 'none', backgroundColor: 'white' }} onClick={scrollToTop} >
-                    <UpIcon sx={{ fontSize: 30, fontWeight: 'bolder', color: 'blue' }} />
-                </Fab>
+                            <Fab size="large" aria-label='Expand' color='inherit' style={{ ...fabStyle, display: visible ? 'inline' : 'none', backgroundColor: 'white' }} onClick={scrollToTop} >
+                                <UpIcon sx={{ fontSize: 30, fontWeight: 'bolder', color: 'blue' }} />
+                            </Fab>
 
 
                 <div >
