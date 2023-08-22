@@ -37,4 +37,5 @@ h1:hover {
 
 .nav_bg {
     background-color: black !important;
+    border-radius: 5px soild red;
 }
