@@ -152,10 +152,8 @@ const Home = () => {
                             <Fab size="large" aria-label='Expand' color='inherit' style={{ ...fabStyle, display: visible ? 'inline' : 'none', backgroundColor: 'white' }} onClick={scrollToTop} >
                                 <UpIcon sx={{ fontSize: 30, fontWeight: 'bolder', color: 'blue' }} />
                             </Fab>
-
-
                 <div >
-                    <Audio
+                    <ThreeDots
                         height="80"
                         width="100"
                         radius="9"
