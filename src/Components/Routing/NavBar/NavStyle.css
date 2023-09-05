@@ -1,0 +1,17 @@
+.navlink {
+    text-decoration: none;
+    font-size: 20px; /* Add units, e.g., px */
+    color: white;
+}
+
+.navlink:active {
+    background-color: navy;
+    text-decoration: none;
+    color: blue;
+    border-radius: 5px;
+}
+
+.navlink:hover {
+    text-decoration: none;
+    color: white;
+}

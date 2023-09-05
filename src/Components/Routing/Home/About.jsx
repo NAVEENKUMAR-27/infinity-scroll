@@ -1,6 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Contact_path } from '../Path/RoutingPath'
 
 
 export const AboutRoute = () => {
@@ -16,7 +17,7 @@ In 2019, the government sanctioned the equivalent of about $46 million for the A
                 </div>
 
 
-                    <Link to="/Contact">Go to Contact page</Link>
+                    <Link to={Contact_path}>Go to Contact page</Link>
             </div>
 
 

@@ -1,6 +1,7 @@
 import { Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { About_path } from '../Path/RoutingPath'
 
 
 export const HomeRoute = () => {
@@ -18,7 +19,7 @@ export const HomeRoute = () => {
                 <div>
                     <img src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2023/08/chandrayaan-3-5-1691547437.jpg" alt="no image" height={200} width={200} />
                 </div>
-                        <Link to="/About">Go to About</Link>
+                        <Link to={About_path}>Go to About</Link>
             </div>
 
 
