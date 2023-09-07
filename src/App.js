@@ -30,8 +30,8 @@ function App() {
             <Route path={About_path} element={[<NavBar />, <AboutRoute />]} />
             <Route path={Contact_path} element={[<NavBar />, <ContactRout />]} />
             <Route path={Url_path} element={[<NavBar />, <UrlChange />]} />
-            <Route path={Detail_path} component={[<DetailPage />]} />
             <Route path={Infinity_path} component={[<NavBar />,<InfinityTask/>]} />
+            <Route path={Detail_path} component={[<DetailPage />]} />
             <Route path={Query_path} element={[<NavBar />, <QueryUrl />]} />
           </Route>
           <Route path={Error_path} element={[<ErrorPage />]} />
