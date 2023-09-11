@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Avatar, Card, CardHeader, CardMedia, Fab, Paper, Typography } from "@mui/material";
+import { Avatar, Card, CardHeader, CardMedia, Fab, Paper } from "@mui/material";
 import UpIcon from '@mui/icons-material/KeyboardArrowUp';
 import "./style.css"
 import { ThreeDots } from 'react-loader-spinner';

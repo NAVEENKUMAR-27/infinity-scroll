@@ -13,6 +13,7 @@ import { ProtectRoute } from './Components/Routing/ProtectUrl/ProtectRout';
 import { Login } from './Components/Routing/Home/Login';
 import QueryUrl from './Components/Routing/Home/QueryUrl';
 import { InfinityTask } from './Components/Home';
+import FetchData from './APIFetch/FetchData';
 
 
 
@@ -22,7 +23,7 @@ function App() {
     <>
     
 
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path={Login_path} element={<Login />} />
           <Route path={Login_path} element={<ProtectRoute />}>
@@ -36,7 +37,9 @@ function App() {
           </Route>
           <Route path={Error_path} element={[<ErrorPage />]} />
         </Routes>
-      </Router>
+      </Router> */}
+
+<FetchData/>
 
       
 
