@@ -54,6 +54,7 @@ export const Login = () => {
 
     const handleSubmit = () => {
         localStorage.setItem("Login", JSON.stringify(true));
+        
         navigate(Home_path)
     }
 

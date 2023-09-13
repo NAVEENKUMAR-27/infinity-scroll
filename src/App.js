@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { HomeRoute } from './Components/Routing/Home/Home';
 import { AboutRoute } from './Components/Routing/Home/About';
 import { ContactRout } from './Components/Routing/Home/Contact';
@@ -14,14 +14,20 @@ import { Login } from './Components/Routing/Home/Login';
 import QueryUrl from './Components/Routing/Home/QueryUrl';
 import { InfinityTask } from './Components/Home';
 import FetchData from './APIFetch/FetchData';
+import { HomeAuth } from './FireBase/Home';
+import { RegisterAuth } from './FireBase/Register';
+import { LoginAuth } from './FireBase/Login';
+import { useState } from 'react';
 
 
 
 
 function App() {
+
+  const [userName,setUserName]=useState("Guest")
   return (
     <>
-    
+
 
       {/* <Router>
         <Routes>
@@ -39,12 +45,25 @@ function App() {
         </Routes>
       </Router> */}
 
-<FetchData/>
-
+      {/* <FetchData/> */}
       
 
+      
+      <Router>
+        <Link to="/"><h3>Home</h3></Link>&nbsp;<Link to="/Login"><h3>Login</h3> </Link>&nbsp; <Link to="/Reg"><h3>Register</h3></Link> 
+        <Routes>
+          <Route path="/" element={<HomeAuth user={userName} setUserName={setUserName} />} />
+          <Route path="/Login" element={[<LoginAuth   user={userName} setUserName={setUserName}/>]} />
+          <Route path="/Reg" element={[<RegisterAuth />]} />
+          <Route path="*" element={<Navigate to="/"/>} />
 
 
+        </Routes>
+      </Router>
+
+
+
+ 
 
 
 
